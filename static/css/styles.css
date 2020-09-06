@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 60px;
+  width: 100%;
+  box-shadow: 0 1px 7px 0.2px;
+  line-height: 60px;
+  padding: 0 100px;
+  background: #ddd;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.world {
+  margin: 50px auto;
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 7px 0 #aaa, -2px -2px 5px 0 #aaa;
+  padding: 13px 20px 15px 87px;
+  position: relative;
+}
+
+.world__header {
+  position: absolute;
+  width: 150px;
+  height: 90%;
+  left: -20%;
+  top: 7px;
+  background-image: linear-gradient(to right bottom, #09203f 0%, #537895 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  border-radius: 5px;
+}
+
+.world tr {
+  display: block;
+  width: 100%;
+}
+
+p {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+p > span {
+  float: right;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 10px;
+  min-width: 250px;
+  min-height: 200px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 7px 0 #aaa, -2px -2px 5px 0 #aaa;
+  padding: 30px 10px 10px;
+  position: relative;
+  margin: 20px;
+}
+
+.card__header {
+  position: absolute;
+  width: 89%;
+  height: 60px;
+  background: crimson;
+  top: -15%;
+  transform: translateX(2%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  border: 1px solid #aaa;
+  padding: 7px 15px;
+  margin: 10px 0;
+  background: transparent;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  color: crimson;
+}
+
+.btn:hover {
+  color: #fff;
+  background: crimson;
+}
+
+.details {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background: #fff;
+  padding: 10px;
+  width: 400px;
+  min-height: 200px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 7px 0 #aaa, -2px -2px 5px 0 #aaa;
+  padding: 30px 20px 10px;
+  position: relative;
+  margin: 20px;
+}
+
+.box__header {
+  position: absolute;
+  width: 90%;
+  height: 60px;
+  background: crimson;
+  top: -7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  text-align: center;
+}

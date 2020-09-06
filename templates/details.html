@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% block content %}
+<div class="details">
+  <div class="box">
+    <div class="box__header">
+      <h2>{{case.country}}</h2>
+    </div>
+    <div class="box__content">
+      <p><strong>Cases: </strong> <span>{{ case.cases}}</span></p>
+      <p>
+        <strong>Today Cases: </strong>
+        <span>{{ case.todayCases}}</span>
+      </p>
+      <p><strong>Deaths: </strong> <span>{{ case.deaths}}</span></p>
+      <p>
+        <strong>Today Deaths: </strong>
+        <span>{{ case.todayDeaths}}</span>
+      </p>
+      <p><strong>Recovered: </strong> <span>{{ case.recovered}}</span></p>
+      <p><strong>Active: </strong> <span>{{ case.active}}</span></p>
+      <p><strong>Critical: </strong> <span>{{ case.critical}}</span></p>
+      <p>
+        <strong>Cases Per One Million: </strong>
+        <span>{{ case.casesPerOneMillion}}</span>
+      </p>
+      <p>
+        <strong>Deaths Per One Million: </strong>
+        <span>{{ case.deathsPerOneMillion}}</span>
+      </p>
+      <p>
+        <strong>Total Tests: </strong>
+        <span>{{ case.totalTests}}</span>
+      </p>
+      <p>
+        <strong>Tests Per One Million: </strong>
+        <span>{{ case.testsPerOneMillion}}</span>
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+  <div class="world">
+    <div class="world__header">
+      <h1>World</h1>
+      <h1>Cases</h1>
+    </div>
+    <div class="world__content">
+      <p><strong>Cases: </strong> <span>{{countries[0].cases}}</span></p>
+      <p>
+        <strong>Recoveries: </strong>
+        <span>{{countries[0].recovered}}</span>
+      </p>
+      <p><strong>Death: </strong> <span>{{countries[0].deaths}}</span></p>
+    </div>
+  </div>
+  <div class="cards">
+    {% for country in countries[1:] %}
+    <div class="card">
+      <div class="card__header">
+        <h2>{{country.country}}</h2>
+      </div>
+      <div class="card__content">
+        <p><strong>Cases: </strong> <span>{{ country.cases}}</span></p>
+        <p><strong>Recoveries: </strong> <span>{{ country.recovered}}</span></p>
+        <p><strong>Death: </strong> <span>{{ country.deaths }}</span></p>
+        <a
+          href="{{ url_for('details', countryName=country.country)}}"
+          class="btn"
+          >Details</a
+        >
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
